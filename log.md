@@ -21,7 +21,7 @@
 
 ### Day 3: January 18, 2022, Tuesday
 
-**Today's Progress**: I made a basic UI for my pet adoption project with an input form. I tested out the petfinder API with curl, and tested out the endpoint URL using fetch(), and console.log the data I got back. I learned that you pass in the authorization token in a headers object into the second argument of fetch(), and that the humongous authorization token can be actually decoded using [this site] (https://jwt.io/). Next step is to tie the input with the endpoint URL together.
+**Today's Progress**: I made a basic UI for my pet adoption project with an input form. I tested out the petfinder API with curl, and tested out the endpoint URL using fetch(), and console.log the data I got back. I learned that you pass in the authorization token in a headers object into the second argument of fetch(), and that the humongous authorization token can be actually decoded using [this site](https://jwt.io/). Next step is to tie the input with the endpoint URL together.
 
 **Thoughts** Felt good that I made steady progress, even these are baby steps.
 
@@ -41,6 +41,17 @@
 I tried to get rid of the .DS_Store file by adding .DS_Store in gitignore, but it didn't work. Then I learned that you'd have to remove it (because it was already added) using `git rm --cached .DS_Store` and then git will start to untrack the .DS_Store file going forward.
 
 **Thoughts**: Again, baby steps but making progress :)
+
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 6: January 22, 2022, Friday
+
+**Today's Progress**: Started seeing CORS error when I tried to fetch data from the petfinder API endpoint, even though the same code worked yesterday. Since I wasn't able to fix the error despite trying what my JS instructor taught, I switched gear to add the map in first. I was able to console.log browser location and the API endpoint URL which is based on that location. To prepare for rendering the shelters as markers, I looked up the google maps [markers documentation](https://developers.google.com/maps/documentation/javascript/markers) to see what arguments it takes, specifically what should be passed into position. `position: myLatLng`, myLatLng should be an object: { lat: -25.363, lng: 131.044 }.
+
+I learned that to make your local repo the same as the remote master branch, can be done with `git fetch --all`, and `git reset --hard origin/master`. [stackoverflow](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
+
+**Thoughts**: A bit frustrated about the CORS error. But glad got other things done that doesn't require using the petfinder API.
 
 **Link(s) to work**
 1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
