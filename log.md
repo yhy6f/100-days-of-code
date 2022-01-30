@@ -28,13 +28,7 @@
 **Link(s) to work**
 1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
 
-### Day 4: January 19, 2022, Wednesday
-
-**Today's Progress**: None. Taking a break as I didn't feel very well.
-
-**Thoughts**: Guilty but not guilty.
-
-### Day 5: January 20, 2022, Thursday
+### Day 4: January 20, 2022, Thursday
 
 **Today's Progress**: Tweaked the html file. Connected the user input of a distance, the click to search button and the API endpoint. For next step I'd like to incorporate the user location into the API endpoint, and render the map centered around the user location in the page. So basically incorporate the first part of the googlemap tutorial into this app, and make the api endpoint responsive to an input.
 
@@ -45,7 +39,7 @@ I tried to get rid of the .DS_Store file by adding .DS_Store in gitignore, but i
 **Link(s) to work**
 1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
 
-### Day 6: January 22, 2022, Friday
+### Day 5: January 21, 2022, Friday
 
 **Today's Progress**: Started seeing CORS error when I tried to fetch data from the petfinder API endpoint, even though the same code worked yesterday. Since I wasn't able to fix the error despite trying what my JS instructor taught, I switched gear to add the map in first. I was able to console.log browser location and the API endpoint URL which is based on that location. To prepare for rendering the shelters as markers, I looked up the google maps [markers documentation](https://developers.google.com/maps/documentation/javascript/markers) to see what arguments it takes, specifically what should be passed into position. `position: myLatLng`, myLatLng should be an object: { lat: -25.363, lng: 131.044 }.
 
@@ -55,3 +49,42 @@ I learned that to make your local repo the same as the remote master branch, can
 
 **Link(s) to work**
 1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 6: January 22, 2022, Saturday
+
+**Today's Progress**: worked on javascript class project which is a news feeder app which uses News API, Guardian API and reddit data.
+
+**Link(s) to work**
+1. [my General Assembly git enterprise repo: feedr-app](https://git.generalassemb.ly/jasmineyehan/12-feedr-app/tree/master/feedr-starter-code)
+
+### Day 7: January 24, 2022, Monday
+
+**Today's Progress**: retested the pet finder app CORS error just to be sure. Didn't make much progress
+
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 8: January 27, 2022, Thursday
+
+**Today's Progress**: Followed along Javascript course instructions on how to use Firebase API to build a forum page with realtime database of messages with CRUD functionalities (Create, Read, Update, Delete). (This wouldn't strictly qualify for the 100 days of code challenge, but since I'm still learning, I will give myself a pass on this)
+
+**Thoughts**: The class was pretty dense and covered a lot of grounds. I had to get over the weird feeling of seeing new methods and using them in ways never seen before because they were specific to Firebase. 
+
+**Link(s) to work**
+1. [my General Assembly git enterprise repo: CRUD and Firebase](https://git.generalassemb.ly/jsr113021/16-intro-to-crud-and-firebase)
+
+### Day 9: January 28, 2022, Friday
+
+**Today's Progress**: Worked on the news feedr app. Made the page load the News API results once opened using window.onload(). Added search feature wherea a text input field pops up once the search icon is clicked on (by adding an active class) and passes the user input in that field onto the search endpoint of News API.
+
+**Link(s) to work**
+1. [my General Assembly git enterprise repo: feedr-app](https://git.generalassemb.ly/jasmineyehan/12-feedr-app/tree/master/feedr-starter-code)
+
+### Day 10: January 29, 2022, Saturday
+
+**Today's Progress**: Pet finder project: Incorporated the code I wrote days ago that return results based on lattitude and longitude into existing code. But I ran into a 400 error.
+
+**Thoughts**: The CORS error on the pet finder app somehow disappeared after the herokuapp url was removed from the endpoint string. Very confused because when the code didn't have that url, there was CORS error as well. When I made the endpoint based on lattitude and longitude (as opposed to location=20740), the endpoint returned data in curl test but a 400 error in browser. 400 error means syntax error so it's quite confusing how this could happen.
+
+**Link(s) to work**
+1. [my General Assembly git enterprise repo: feedr-app](https://git.generalassemb.ly/jasmineyehan/12-feedr-app/tree/master/feedr-starter-code)
