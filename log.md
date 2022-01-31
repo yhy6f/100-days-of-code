@@ -88,3 +88,12 @@ I learned that to make your local repo the same as the remote master branch, can
 
 **Link(s) to work**
 1. [my General Assembly git enterprise repo: feedr-app](https://git.generalassemb.ly/jasmineyehan/12-feedr-app/tree/master/feedr-starter-code)
+
+### Day 11: January 30, 2022, Sunday
+
+**Today's Progress**: Worked on my personal portfolio website. Started off with a template and changed out some of the placeholder texts. Also researched how to add gifs.
+
+**Thoughts**: Wanted to add gifs of screenshots of interaction with some of my past interactive graphics as examples of projects. Added a random exaple for testing and realized that I need to pay attention to the dimension of the gifs otherwise it'd messup the grid of the images.
+
+**Link(s) to work**
+1. [my Github.io repo](https://github.com/yhy6f/yhy6f.github.io)
