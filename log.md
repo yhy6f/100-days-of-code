@@ -97,3 +97,12 @@ I learned that to make your local repo the same as the remote master branch, can
 
 **Link(s) to work**
 1. [my Github.io repo](https://github.com/yhy6f/yhy6f.github.io)
+
+### Day 12: Feb 1, 2022, Tuesday
+
+**Today's Progress**: Attemped to add geocoding function to the petfinder app. Worked through the [geocoding documentation](https://developers.google.com/maps/documentation/javascript/geocoding)
+
+**Thoughts**: At first was confused that it was another library that needed to be imported so added "geocode" & "geocoder" after "libraries=" in the string. Then read documentation more closely and realized that Geocoder is a class provided by the Maps JavaScript API. But using google.maps.Geocoder.geocode(...) returned error saying this is not a function. 
+
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
