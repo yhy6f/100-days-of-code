@@ -106,3 +106,12 @@ I learned that to make your local repo the same as the remote master branch, can
 
 **Link(s) to work**
 1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 13: Feb 2, 2022, Wednesday
+
+**Today's Progress**: Geocoded the locations of the results returned from API call, added markers based on the locations, and added animation effects of markers dropping.
+
+**Thoughts**: Finally figured out that to use the Geocoder class, you need to do new google.maps.Geocoder(), just like map = new google.maps.Map(). It wasn't clear in the Geocoder API documentation, but it would have easier to make the connection for more experienced programmers I think. I'm still glad I figured it out although it took some time. Also, [This Youtube tutorial](https://www.youtube.com/watch?v=tmdtH1hwlDo) on Google Maps markers was clear, concise and useful. I appreciate the author's work.
+
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
