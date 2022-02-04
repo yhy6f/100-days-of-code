@@ -115,3 +115,10 @@ I learned that to make your local repo the same as the remote master branch, can
 
 **Link(s) to work**
 1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 14: Feb 3, 2022, Thursday
+
+**Today's Progress**: Added info window to each marker in pet finder app.
+
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
