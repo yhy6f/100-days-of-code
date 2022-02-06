@@ -122,3 +122,19 @@ I learned that to make your local repo the same as the remote master branch, can
 
 **Link(s) to work**
 1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 15: Feb 4, 2022, Friday
+
+**Today's Progress**: Changed marker event listenr and handler so that info window disappear after other info windows are clicked.
+
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 16: Feb 5, 2022, Saturday
+
+**Today's Progress**: worked on portfolio website
+
+**Thoughts**: I achieved the behavorial goal (per the book Procrastination) of spending 4 hours, but the progress was not as much as I had expected compared to the time I spent. Wasted some time going back and forth on some decisions. Need to overcome my perfectionalism!
+
+**Link(s) to work**
+1. [my Github.io repo](https://github.com/yhy6f/yhy6f.github.io)
