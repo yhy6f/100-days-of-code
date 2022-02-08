@@ -138,3 +138,17 @@ I learned that to make your local repo the same as the remote master branch, can
 
 **Link(s) to work**
 1. [my Github.io repo](https://github.com/yhy6f/yhy6f.github.io)
+
+### Day 17: Feb 6, 2022, Sunday
+
+**Today's Progress**: Added more clips to the portfolio website
+
+**Link(s) to work**
+1. [my Github.io repo](https://github.com/yhy6f/yhy6f.github.io)
+
+### Day 18: Feb 7, 2022, Monday
+
+**Today's Progress**: Fixed an issue in pet finder app: previously when a shelter doesn't have photos in data returned by API, the marker would not load. Fixed the issue by adding a condition to the code that generate the JSX string passed into setContent() method. Also moved the JSX code into a separate function.
+
+**Link(s) to work**
+1. [my Github.io repo](https://github.com/yhy6f/yhy6f.github.io)
