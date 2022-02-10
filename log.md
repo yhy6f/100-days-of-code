@@ -151,4 +151,20 @@ I learned that to make your local repo the same as the remote master branch, can
 **Today's Progress**: Fixed an issue in pet finder app: previously when a shelter doesn't have photos in data returned by API, the marker would not load. Fixed the issue by adding a condition to the code that generate the JSX string passed into setContent() method. Also moved the JSX code into a separate function.
 
 **Link(s) to work**
-1. [my Github.io repo](https://github.com/yhy6f/yhy6f.github.io)
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 19: Feb 8, 2022 Tuesday
+
+**Today's Progress**: Tried to look for a solution to add google API key as environment variable for the pet finder app. Converted the code to an express app, although it didn't solve the problem.
+
+**Link(s) to work**
+1. [my github repo: pet_finder express app](https://github.com/yhy6f/petfinder-express-app)
+
+### Day 20: Feb 9, 2022 Wednesday
+
+**Today's Progress**: Found a solution to not push Google API key to Github: store the key in an environment.js file and uses document.createElement("script") and append to the body of html file.
+
+**Thoughts**: After pushing the code I realized I still included my google api key in my old script tag code that was commented-out. So I had to delete that commit from github and locally. Thankfully found a very useful stackoverflow [post](https://stackoverflow.com/questions/448919/how-can-i-remove-a-commit-on-github). After following the instructions (git rebase -i HEAD~2, git push origin +branchName --force), the local repo was reverted to what it was before the commit in question, and I added back the code.
+
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
