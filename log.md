@@ -155,7 +155,13 @@ I learned that to make your local repo the same as the remote master branch, can
 
 ### Day 19: Feb 8, 2022 Tuesday
 
-**Today's Progress**: Tried to look for a solution to add google API key as environment variable for the pet finder app. Converted the code to an express app, although it didn't solve the problem.
+**Today's Progress**: Tried to look for a solution to add google API key as environment variable for the pet finder app. Converted the code to an express app, although it didn't solve the problem. 
+
+Also attempted to add a refreshToken function that does the samething as the curl request referred in API document to refresh access token, which is required to make Petfinder API calls. 
+
+```
+curl -d "grant_type=client_credentials&client_id={CLIENT-ID}&client_secret={CLIENT-SECRET}" https://api.petfinder.com/v2/oauth2/token
+```
 
 **Link(s) to work**
 1. [my github repo: pet_finder express app](https://github.com/yhy6f/petfinder-express-app)
@@ -166,5 +172,58 @@ I learned that to make your local repo the same as the remote master branch, can
 
 **Thoughts**: After pushing the code I realized I still included my google api key in my old script tag code that was commented-out. So I had to delete that commit from github and locally. Thankfully found a very useful stackoverflow [post](https://stackoverflow.com/questions/448919/how-can-i-remove-a-commit-on-github). After following the instructions (git rebase -i HEAD~2, git push origin +branchName --force), the local repo was reverted to what it was before the commit in question, and I added back the code.
 
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 21: Feb 10, 2022 Thursday
+
+**Today's Progress**: Worked on the refreshToken function in token.js that would refresh the access token. Although still not able to return the token value and assign it to a variable in script.js.
+
+**Thoughts**: My engineering friend gave me some hints: -d will send the data given to it as the body of a POST request, whereas my previous attempt was placing the data in the headers of a GET request: fetch("https://api.petfinder.com/v2/oauth2/token",options)
+
+So to make the -d request, we'd have to switch the method to "POST", create a body object, convert the body into a string using JSON.stringify() because bodies of HTTP request must be strings. 
+```
+const body = {
+    "grant_type": "client_credentials",
+    "client_id": "...",
+    "client_secret": "..."
+}
+fetch('https://api.petfinder.com/v2/oauth2/token', {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+            'Content-Type': 'application/json; charset=utf-8'
+        }
+    })
+    .then(response => response.json())
+    .then(auth => {return auth.access_token})
+    .catch(error => console.log(error)
+
+```
+But still wasn't able to return the value of auth.access_token and assign it to a variable.
+
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 22: Feb 11, 2022 Friday
+**Today's Progress**: Continued to work on the refreshToken() function for pet finder app. Also tried to deploy the pet finder app on Heroku but the map didn't render.
+**Thoughts**: hint from my JavaScript course instructor: adding let access_token = '' inside the refreshToken() function and in the last .then() of the fetch request, add access_token = auth.access_token, and add return access_token after the fetch request. The function returns an empty string because the return runs before the fetch is executed, and he suggested I should turn this into an async function. I tweaked this function a few different ways but still didn't work. I should look closely into async and await.
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 23: Feb 12, 2022 Saturdey
+**Today's Progress**: Tweaked the css of the pet finder app so the search area is in the center of the page. Also updated the intro section of portfolio website and re-reorganized clips.
+**Link(s) to work**
+1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+2. [my github repo: yhy6f.github.io](https://github.com/yhy6f/yhy6f.github.io)
+
+### Day 24: Feb 13, 2022 Sunday
+**Today's Progress**: Worked on fortlio website.
+**Link(s) to work**
+1. [my github repo: yhy6f.github.io](https://github.com/yhy6f/yhy6f.github.io)
+
+### Day 25: Feb 14, 2022 Monday
+**Today's Progress**: Made the refreshToken function work, with some help from my friend.
+**Thoughts**: Turns out, to return value from a fetch request, you need to return the promise in the function and access the value in .then() outside of the function, per this [stackOverflow post](https://stackoverflow.com/questions/47604040/how-to-get-data-returned-from-fetch-promise).
 **Link(s) to work**
 1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
