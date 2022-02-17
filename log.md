@@ -218,7 +218,7 @@ But still wasn't able to return the value of auth.access_token and assign it to 
 2. [my github repo: yhy6f.github.io](https://github.com/yhy6f/yhy6f.github.io)
 
 ### Day 24: Feb 13, 2022 Sunday
-**Today's Progress**: Worked on fortlio website.
+**Today's Progress**: Portfolio website: finalized bio section in header; added clips and headerimages; added target="_blank" to all a tags; added hyperlink to skills section so a click takes user to corresponding clips; added dotted line under all hyperlinks.
 **Link(s) to work**
 1. [my github repo: yhy6f.github.io](https://github.com/yhy6f/yhy6f.github.io)
 
@@ -227,3 +227,17 @@ But still wasn't able to return the value of auth.access_token and assign it to 
 **Thoughts**: Turns out, to return value from a fetch request, you need to return the promise in the function and access the value in .then() outside of the function, per this [stackOverflow post](https://stackoverflow.com/questions/47604040/how-to-get-data-returned-from-fetch-promise).
 **Link(s) to work**
 1. [my github repo: pet_finder](https://github.com/yhy6f/pet_finder)
+
+### Day 26: Feb 15, 2022 Tuesday
+**Today's Progress**: Portfolio website: re-ordered some sections, small tweaks
+**Thoughts**: .
+**Link(s) to work**
+1. [my github repo: yhy6f.github.io](https://github.com/yhy6f/yhy6f.github.io)
+
+
+### Day 27: Feb 16, 2022 Wednesday
+**Today's Progress**: Added typewriter animation to my titles in the portfolio website, with typing and deleting effect.
+**Thoughts**: It took me a while to find the right keyword to search, but eventually I found a [tutorial](https://usefulangle.com/post/75/typing-effect-animation-javascript-css) and was able to insert the javascript. It took a few trial and errors to get the css right for the style of my website. The example code from the tutorial puts the content of the text added or deleted inside a div with id of #text, and set the color and size for #text in css. To conform to the style of my website, I made that a p tag, because p tags in the header has style set up in the css file of the web template. Another thing was, when I just copied and pasted the css for #container, the title and bio section would flicker, because when all the words are deleted, the div becomes empty, and I figured that was causing the height of the div to change. So the solution was to set a fixed height for the #container div.
+**Link(s) to work**
+1. [my github repo: yhy6f.github.io](https://github.com/yhy6f/yhy6f.github.io)
+
